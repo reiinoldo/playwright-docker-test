@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  playwright:
+    container_name: playwright-test
+    build:
+      context: .
+      dockerfile: docker.Dockerfile
