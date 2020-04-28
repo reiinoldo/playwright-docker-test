@@ -1,8 +1,9 @@
-import { firefox } from "playwright";
+import { chromium } from "playwright";
 
 module.exports = {
-  browserType: firefox,
+  browserType: chromium,
   launchConfig: {
     headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   },
 };
