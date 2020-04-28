@@ -1,9 +1,6 @@
 import { browserType, launchConfig, contextConfig } from "../playwright.config";
 
-const rootSelector = "#root";
 let browser, context, page;
-
-export const root = async () => await page.$(rootSelector);
 
 export const load = async () => {
   browser = await browserType.launch(launchConfig);
