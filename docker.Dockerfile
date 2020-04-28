@@ -83,11 +83,17 @@ RUN groupadd -r pwuser && useradd -r -g pwuser -G audio,video pwuser \
     && mkdir -p /home/pwuser/Downloads \
     && chown -R pwuser:pwuser /home/pwuser
 
+
+RUN apt-get install -y libatk-bridge2.0-0 \
+    wget \
+    libgbm1
+
 # 6. (Optional) Install XVFB if there's a need to run browsers in headful mode
 RUN apt-get install -y xvfb
 
 # Run everything after as non-privileged user.
 # USER pwuser
+# ENV DEBUG=pw:browser*
 
 WORKDIR /automation
 COPY package.json ./
