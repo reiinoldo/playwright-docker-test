@@ -3,19 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "cd e2e && jest"
+    "e2e": "set DEBUG=pw:api && cd e2e && jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +33,6 @@
     ]
   },
   "devDependencies": {
-    "playwright": "^0.9.24"
+    "playwright": "^1.4.2"
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
   globals: {
-    baseURL: "https://google.com",
+    baseURL: "http://localhost:3001",
   },
   testMatch: ["**/specs/*.js"],
   transform: {
